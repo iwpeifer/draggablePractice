@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#box-container {
+  background-image: url('./images/table2.jpg');
+  opacity: 50%;
+  width: 600px;
+  height: 600px;
+  padding: 10px;
+  border: 2px solid red;
+  margin: 0;
+  position: relative;
+  overflow: scroll;
+}
+
+#box-contents {
+  background-image: url('./images/box-interior.jpeg');
+  height: 250px;
+  width: 300px;
+  border: 2px solid brown;
+  margin: 0;
+  position: relative;
+  float: left;
+  display: inline;
+}
+
+.box {
+  background-image: url('./images/box-icon.png');
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-size: 120px 120px;
+}
+
+.letter {
+  background-image: url('./images/letter.png');
+  position: absolute;
+  width: 90px;
+  height: 100px;
+  background-size: 90px 100px;
+}
