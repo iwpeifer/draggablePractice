@@ -29,7 +29,7 @@ export default class Box extends Component {
 
   render() {
     return (
-      <Draggable bounds='parent' defaultPosition={this.initPosition()} onStop={ () => console.log(this)}>
+      <Draggable bounds='parent' defaultPosition={this.initPosition()} onStop={function() { console.log(this.children) }}>
         <div id={this.props.boxId} onDoubleClick={this.props.openBox} className='box'></div>
       </Draggable>
     )
