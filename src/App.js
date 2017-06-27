@@ -3,7 +3,7 @@ import Draggable from 'react-draggable';
 import { Row, Col } from 'react-materialize'
 
 import './App.css';
-import DragContainer from './components/DragContainer'
+import Room from './components/Room'
 import AddButton from './components/AddButton'
 
 class App extends Component {
@@ -29,6 +29,10 @@ class App extends Component {
     })
   }
 
+  putDown() {
+    console.log(arguments)
+  }
+
   openBox() {
     console.log("LOCKED ;)")
   }
@@ -44,7 +48,7 @@ class App extends Component {
           <h3>hellow</h3>
         </Col>
         <Col m={5}>
-            <DragContainer boxes={this.state.boxes} letters={this.state.letters} openBox={this.openBox} openLetter={this.openLetter}/>
+            <Room boxes={this.state.boxes} letters={this.state.letters} openBox={this.openBox} openLetter={this.openLetter} putDown={this.putDown}/>
           <Col m={2}>
             <AddButton thingToAdd="Box" thingToDo={this.addBox} />
           </Col>

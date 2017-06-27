@@ -12,7 +12,7 @@ export default class extends Component {
     console.log(this.props)
     return (
       <div id="box-container">
-        {this.props.boxes.map((box, index) => <Box key={index} openBox={this.props.openBox}/>)}
+        {this.props.boxes.map((box, index) => <Box key={index} boxId={`Box${index}`} openBox={this.props.openBox} putDown={this.props.putDown}/>)}
         {this.props.letters.map((letter, index) => <Letter key={index} openLetter={this.props.openLetter}/>)}
       </div>
     )
